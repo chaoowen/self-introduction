@@ -5,4 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: "/self-introduction/",
   plugins: [vue()],
+  resolve: {
+    alias: {
+      '@': '/src'
+    }
+  }
 })

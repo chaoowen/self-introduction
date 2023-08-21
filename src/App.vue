@@ -15,20 +15,43 @@
   </full-page> -->
 
   <full-page ref="fullpage" :options="options" id="fullpage">
-    <div class="section">First section ...</div>
-    <div class="section">Second section ...</div>
+    <div class="section">
+      <Cover 
+        @directPortfolio="$refs.fullpage.api.moveTo('portfolio')"
+      />
+    </div>
+    <div class="section">
+      <Workline />
+    </div>
+    <div class="section">
+      <Skills />
+    </div>
+    <div class="section">
+      <Portfolio />
+    </div>
   </full-page>
 </template>
 
 <script>
+import Cover from '@/components/Cover.vue';
+import Workline from '@/components/Workline.vue';
+import Skills from '@/components/Skills.vue';
+import Portfolio from '@/components/Portfolio.vue';
 import { onMounted } from 'vue';
 export default {
+  components: {
+    Cover,
+    Workline,
+    Skills,
+    Portfolio
+  },
   setup() {
     const options = {
       licenseKey: 'gplv3-license',
+      verticalCentered: false,
       menu: '#menu',
-      anchors: ['page1', 'page2', 'page3'],
-      sectionsColor: ['#41b883', '#ff5f45', '#0798ec'],
+      anchors: ['cover', 'workTimeline', 'expertise', 'portfolio'],
+      sectionsColor: ['#D8D8D8', '#E2E2E2', '#D8D8D8', '#E2E2E2'],
     };
     onMounted(() => {
       // hide fullpage watermark
