@@ -1,12 +1,12 @@
 <template>
   <div class="relative h-screen flex items-center">
     <!-- background words -->
-    <div>
+    <div class="hidden lg:block">
       <p class="text-9xl font-extrabold text-shallow">FRONT</p>
       <p class="text-9xl font-extrabold text-shallow">END</p>
       <p class="text-9xl font-extrabold text-shallow">DEVELOPER</p>
     </div>
-    <div class="mx-6">
+    <div class="z-10 mx-6">
       <div>
         <p class="text-5xl font-extrabold text-dark">Front</p>
         <p class="text-5xl font-extrabold text-dark">End</p>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <!-- picture -->
-    <div class="absolute bottom-6 right-6 w-60">
+    <div class="hidden sm:block lg:hidden xl:block absolute bottom-6 right-6 w-60">
       <img src="./../assets/images/coverImage.jpeg" alt="">
     </div>
   </div>

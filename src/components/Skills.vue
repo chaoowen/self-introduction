@@ -5,7 +5,7 @@
       SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS
     </div>
     <section class="relative z-10 h-screen flex items-center justify-center">
-      <div class="flex py-10 px-12 bg-shallow rounded-xl">
+      <div class="flex flex-col md:flex-row py-10 px-12 bg-shallow rounded-xl">
         <!-- skills -->
         <div>
           <p class="pb-4 font-bold text-xl">專業技能</p>
@@ -25,10 +25,6 @@
         
       </div>
     </section>
-    <!-- picture -->
-    <!-- <div class="absolute bottom-0 left-1/2 w-72">
-      <img src="./../assets/images/skillTree.png" alt="">
-    </div> -->
   </div>
 
 </template>

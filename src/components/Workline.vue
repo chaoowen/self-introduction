@@ -1,25 +1,30 @@
 <template>
-  <div class="h-screen flex jusity-between items-center">
+  <div class="lg:h-screen flex items-center">
     <!-- background title -->
     <p class="absolute right-0 top-10 text-9xl font-extrabold bg-word">EXPERIENCE</p>
     <p class="absolute right-0 bottom-10 text-9xl font-extrabold bg-word">工作經歷</p>
     <!-- content -->
-    <div v-for="(item, index) in experience" :key="index" class="z-10 flex-1 flex flex-col items-center">
-      <div class="flex items-center justify-center w-40 h-40 rounded-full text-white bg-middle">
-        <div class="flex flex-col items-center">
-          <span class="text-2xl pb-1">{{ item.phase[0] }}</span>
-          <span>{{ item.phase[1] }}</span>  
+    <section class="flex-1 flex flex-col lg:flex-row jusity-between">
+      <div v-for="(item, index) in experience" :key="index" class="z-10 flex-1 flex flex-col items-center">
+        <div class="relative flex items-center justify-center w-40 h-40 rounded-full text-white bg-middle">
+          <!-- line -->
+          <div class="absolute-center w-96 h-1 bg-middle"></div>
+          <div class="flex flex-col items-center">
+            <span class="text-2xl pb-1">{{ item.phase[0] }}</span>
+            <span>{{ item.phase[1] }}</span>  
+          </div>
         </div>
-      </div>
-      <div class="mt-12 mx-2">
-        <p class="mb-4">{{ item.title }}</p>
-        <div>
-          <li v-for="(list, idx) in item.content" :key="idx" class="pb-1">
-            {{ list }}
-          </li>  
+        <div class="py-12 mx-2">
+          <p class="mb-4">{{ item.title }}</p>
+          <div>
+            <li v-for="(list, idx) in item.content" :key="idx" class="pb-1">
+              {{ list }}
+            </li>  
+          </div>
         </div>
-      </div>
-    </div>  
+      </div>   
+    </section>
+       
   </div>
   
 </template>
@@ -48,7 +53,7 @@
     },
     { 
       phase: ['台灣知識庫', '前端工程師'], 
-      title: '2021/10 - 20223/02', 
+      title: '2021/10 - 2023/02', 
       content: [
         '協作2個 nuxt 約課、購課系統網站',
         '負責1個 nuxt 線上解題網站',
@@ -60,7 +65,7 @@
       phase: ['星宇航空', '前端工程師'], 
       title: '2023/03 - 2023/06', 
       content: [
-        '學習了解 vue 內部模板 JX template',
+        '使用元件模板化寫程式',
         'clean code 程式碼優化',
         '依據使用者需求新增並調整網站功能'
       ] 
