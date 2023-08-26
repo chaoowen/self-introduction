@@ -2,7 +2,7 @@
   <div>
     <!-- background title -->
     <div class="absolute left-0 top-0 text-9xl font-extrabold text-shallow">
-      SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS
+      SKILLS 專業技能
     </div>
     <section class="relative z-10 h-screen flex items-center justify-center">
       <div class="flex flex-col md:flex-row py-10 px-12 bg-shallow rounded-xl">
